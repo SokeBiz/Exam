@@ -1,6 +1,12 @@
 import mysql.connector as connection
 mydb = connection.connect(host="127.0.0.1", user="root", password="", database="mydatabase")
 
+
+# mycursor.execute("create table student(ID int primary key auto_increment, fname char(20), lname char(20), matric int(5), password varchar(20), address varchar(255), gender char(10), score int(3), state_of_origin char(15), course char(20), duration char(10), admission_status char(5), exam_done char(5))")
+# details=f"insert into student(fname, lname, matric, password, address, gender, score, state_of_origin, course, duration, admission_status, exam_done) values('Sodeeq', 'Oladimeji', {generate}, 'soso1', 'Ibadan', 'Male', 0, 'Oyo', 'Cyb', '4 years', 'NO', 'NO')"
+# query = "insert into student(fname, lname, matric, password, address, gender, score, state_of_origin, course, duration, admission_status, exam_done) values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+
+
 import random
 import time
 mycursor = mydb.cursor()
